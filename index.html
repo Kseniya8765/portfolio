@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="slick-master/slick/slick.css"/>
+    <link rel="stylesheet" href="slick-master/slick/slick-theme.css"/>
+     <script src="application.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class = "content">
+  <div class = "about">
+  <div class = "i"></div>
+<div class = "info">
+  <div class = "name">Kseniya Tomashevich</div>
+  <div class = "github">
+    <a target="blanck" href="https://github.com/Kseniya8765">
+      <img src="./assets/social_media_logo_brand_github_icon-icons.com_61729.png" alt="git"></a></div>
+  <div class = "links">
+    <div class = "facebook">
+      <a target="blanck"  href="https://www.facebook.com/profile.php?id=100009451446213">
+      <img src="./assets/Facebook_Square_icon-icons.com_49948.png" alt="facrbook"></a></div>
+    <div class = "mail">
+      <a target="blanck"  href="mailto:tomashevich.kseniya@bk.ru ?subject=Письмо от посетителя">
+      <img src="./assets/mail_email_message_electronic_online_web_icon-icons.com_59986.png" alt="mail"></a></div>
+  </div>
+</div>
+</div>
+  <div class = "panel">
+ <div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Education
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <p>School 2003-2013</p>
+      <p>BSEU 2013-2017</p>
+      <p>RSSchool Courses 2019-2020</p>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="portfolio">Portfolio</div>
+  <div class="slider">
+      <div class="slide-element">
+          <div class="block">
+          <div class="discription">
+            <h4>Landing:Theyalow</h4>
+            <p>Use Pixel-perfect</p>
+            <p>Use HTML/CSS</p>
+            <p>Versions: 1300px and 640px</p>
+            </div>
+          <div class="btn1">
+            PRESS IMG TO SEE MORE >
+            </div></div>
+            <div class="discription2">
+                <div class="dropdown">
+                    <button class="dropbtn2" onclick="myFunction3()">Description
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown2">
+                      <p>Landing:Theyalow</p>
+                      <p>Use Pixel-perfect</p>
+                      <p>Use HTML/CSS</p>
+                      <p>Versions: 1300px and 640px</p>
+                    </div>
+                  </div>
+            </div>
+          <div class="maket"><a href="./projects/theyalow/index.html"><img src="./assets/THEYALOW Desktop.jpg" alt="THEYALOW"></a></div>
+         </div>
+         <div class="slide-element">
+            <div class="block">
+           <div class="discription">
+             <h4>Landing:repair-design-project</h4>
+             <p>Use Figma</p>
+             <p>Use HTML/CSS</p>
+             <p>Versions: 1440px and 375px</p>
+              </div>
+           <div class="btn1">
+             PRESS IMG TO SEE MORE >
+              </div></div>
+              <div class="discription2">
+                  <div class="dropdown">
+                      <button class="dropbtn3" onclick="myFunction4()">Description
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content" id="myDropdown3">
+                          <p>Landing:repair-design-project</p>
+                          <p>Use Figma</p>
+                          <p>Use HTML/CSS</p>
+                          <p>Versions: 1440px and 375px</p>
+                      </div>
+                    </div>
+              </div>
+           <div class="maket"><a href="./projects/repair-design-project/index.html"><img src="./assets/Slice 1.jpg" alt="repair"></a></div>
+          </div> </div>
+</div>
+</div>
+
+
+
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content
+
+*/
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<script src="slick-master/slick/slick.js"></script>
+    <script>
+$(document).ready(function(){
+$('.slider').slick({
+});
+});
+</script>
+<script src="slick-master/slick/slick.js"></script>
+    <script>
+$(document).ready(function(){
+$('.slider').slick({
+});
+});
+</script>
+<script>
+  function myFunction3() { document.getElementById("myDropdown2").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn2')) {
+    var myDropdown = document.getElementById("myDropdown2");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<script>
+    function myFunction4() { document.getElementById("myDropdown3").classList.toggle("show");
+  }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn3')) {
+      var myDropdown= document.getElementById("myDropdown3");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+    }
+  }
+  </script>
+</body>
+</html>
