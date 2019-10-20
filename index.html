@@ -32,15 +32,14 @@
   <div class = "panel">
  <div class="navbar">
   <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Education
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content" id="myDropdown">
-      <p>School 2003-2013</p>
-      <p>BSEU 2013-2017</p>
-      <p>RSSchool Courses 2019-2020</p>
+    <div id="myDropdown" class="menu">
+      <span class="title">Education</span>
+      <ul>
+        <li>School 2003-2013</li>
+        <li>BSEU 2013-2017</li>
+        <li>RSSchool Courses 2019-2020</li>
+      </ul>
     </div>
-  </div>
 </div>
   </div>
   <div class="portfolio">Portfolio</div>
@@ -57,17 +56,15 @@
             PRESS IMG TO SEE MORE >
             </div></div>
             <div class="discription2">
-                <div class="dropdown">
-                    <button class="dropbtn2" onclick="myFunction3()">Description
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content" id="myDropdown2">
-                      <p>Landing:Theyalow</p>
-                      <p>Use Pixel-perfect</p>
-                      <p>Use HTML/CSS</p>
-                      <p>Versions: 1300px and 640px</p>
-                    </div>
-                  </div>
+              <div id="myDropdown3" class="menu3">
+                <span class="title3">Description</span>
+                <ul>
+                  <li>Landing:Theyalow</li>
+                  <li>Use Pixel-perfec</li>
+                  <li>Use HTML/CSS</li>
+                  <li>Versions: 1300px and 640px</li>
+                </ul>
+              </div>
             </div>
           <div class="maket"><a href="./projects/theyalow/index.html"><img src="./assets/THEYALOW Desktop.jpg" alt="THEYALOW"></a></div>
          </div>
@@ -83,16 +80,14 @@
              PRESS IMG TO SEE MORE >
               </div></div>
               <div class="discription2">
-                  <div class="dropdown">
-                      <button class="dropbtn3" onclick="myFunction4()">Description
-                        <i class="fa fa-caret-down"></i>
-                      </button>
-                      <div class="dropdown-content" id="myDropdown3">
-                          <p>Landing:repair-design-project</p>
-                          <p>Use Figma</p>
-                          <p>Use HTML/CSS</p>
-                          <p>Versions: 1440px and 375px</p>
-                      </div>
+                  <div id="myDropdown2" class="menu2">
+                      <span class="title2">Description</span>
+                      <ul>
+                        <li>Landing:repair-design-project</li>
+                        <li>Use Figma</li>
+                        <li>Use HTML/CSS</li>
+                        <li>Versions: 1440px and 375px</li>
+                      </ul>
                     </div>
               </div>
            <div class="maket"><a href="./projects/repair-design-project/index.html"><img src="./assets/Slice 1.jpg" alt="repair"></a></div>
@@ -100,27 +95,26 @@
 </div>
 </div>
 
-
-
-
-
 <script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content
-
-*/
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
-  }
-}
+let menuElem = document.getElementById('myDropdown');
+    let titleElem = menuElem.querySelector('.title');
+    titleElem.onclick = function() {
+    menuElem.classList.toggle('open');
+    };
+</script>
+<script>
+let menu2Elem = document.getElementById('myDropdown2');
+    let title2Elem = menu2Elem.querySelector('.title2');
+    title2Elem.onclick = function() {
+      menu2Elem.classList.toggle('open');
+    };
+</script>
+<script>
+let menu3Elem = document.getElementById('myDropdown3');
+    let title3Elem = menu3Elem.querySelector('.title3');
+    title3Elem.onclick = function() {
+      menu3Elem.classList.toggle('open');
+    };
 </script>
 <script src="slick-master/slick/slick.js"></script>
     <script>
@@ -136,31 +130,7 @@ $('.slider').slick({
 });
 });
 </script>
-<script>
-  function myFunction3() { document.getElementById("myDropdown2").classList.toggle("show");
-}
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn2')) {
-    var myDropdown = document.getElementById("myDropdown2");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
-  }
-}
-</script>
-<script>
-    function myFunction4() { document.getElementById("myDropdown3").classList.toggle("show");
-  }
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn3')) {
-      var myDropdown= document.getElementById("myDropdown3");
-        if (myDropdown.classList.contains('show')) {
-          myDropdown.classList.remove('show');
-        }
-    }
-  }
-  </script>
+
+
 </body>
 </html>
